@@ -17,6 +17,7 @@ public class JavaDateTime {
         }
     }
 
+    // Method to find the day of the week.
     public static String findDay(int month, int day, int year) {
         LocalDate localDate = LocalDate.of(year,month,day);
         return localDate.getDayOfWeek().toString();
