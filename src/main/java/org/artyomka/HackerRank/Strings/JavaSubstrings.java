@@ -15,14 +15,17 @@ public class JavaSubstrings {
         // Constrains
         boolean regex = s.matches("[a-zA-Z]+");
         final byte MAX_STRING_LENGTH = 100;
-        final byte MIN_STRING_LENGTH = 100;
-        final boolean STRING_LENGTH_RANGE = s.length() > MIN_STRING_LENGTH && s.length() < MAX_STRING_LENGTH;
+        final byte MIN_STRING_LENGTH = 1;
+        final boolean STRING_LENGTH_RANGE = s.length() >= MIN_STRING_LENGTH && s.length() <= MAX_STRING_LENGTH;
 
         // Logic && Output
         if(regex && STRING_LENGTH_RANGE) {
             int start = scanner.nextInt();
-            int end = s.length() - scanner.nextInt();
+            int end = scanner.nextInt();
             System.out.printf("%s",s.substring(start,end));
         }
+
+        // Closing the Scanner
+        scanner.close();
     }
 }
