@@ -7,7 +7,10 @@ import java.util.Scanner;
 @Author("Artyomka")
 public class JavaOutputFormatting {
     public static void main(String[] args) {
+        // Input
         Scanner scanner = new Scanner(System.in);
+
+        // Output
         System.out.println("================================");
         for (int i = 0; i < 3; i++) {
             String str = scanner.next();

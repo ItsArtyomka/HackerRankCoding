@@ -23,9 +23,11 @@ public class JavaDatatypes {
     private static final long MIN_LONG = Long.MIN_VALUE;
 
     public static void main(String[] args) {
+        // Input
         Scanner scanner = new Scanner(System.in);
         byte T = scanner.nextByte();
         for (int i = 0; i < T; i++) {
+            // Logic
             try {
                 long testNumber = scanner.nextLong();
                 System.out.printf("%s can be fitted in: %n",testNumber);

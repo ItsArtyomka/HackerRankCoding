@@ -11,7 +11,7 @@ public class JavaCurrencyFormatter {
         Scanner scanner = new Scanner(System.in);
         double payment = scanner.nextDouble();
 
-        //---Output---
+        //----Output----
         // US Currency
         System.out.println("US: " + NumberFormat.getCurrencyInstance(Locale.US).format(payment));
 
