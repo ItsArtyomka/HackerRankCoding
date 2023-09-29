@@ -2,7 +2,7 @@ package org.artyomka.HackerRank.thirty_days_of_code;
 
 import java.util.Scanner;
 
-public class DataTypes {
+public class D1_DataTypes {
     public static void main(String[] args) {
         // Input
         Scanner scanner = new Scanner(System.in);
