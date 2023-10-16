@@ -16,13 +16,13 @@ public class JavaGenerics {
         strList.add("World");
 
         // Integer Output
-        for (int i = 0; i < intList.size(); i++) {
-            System.out.println(intList.get(i));
+        for (Integer integer : intList) {
+            System.out.println(integer);
         }
 
         // String Output
-        for (int i = 0; i < strList.size(); i++) {
-            System.out.println(strList.get(i));
+        for (String s : strList) {
+            System.out.println(s);
         }
     }
 }
