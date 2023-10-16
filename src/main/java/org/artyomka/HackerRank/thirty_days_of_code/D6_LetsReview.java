@@ -6,26 +6,31 @@ public class D6_LetsReview {
     public static void main(String[] args) {
         // Input
         Scanner scanner = new Scanner(System.in);
-        int t = scanner.nextInt();
-        scanner.nextLine();
+        int T = scanner.nextInt();
 
-        // Tests Constraints
-        for (int tests = 0; tests < t; tests++) {
-            String string = scanner.nextLine();
+        // Logic
+        while (T > 0) {
+            String s = scanner.next();
+            char[] sArr = s.toCharArray();
 
             // Even Index
-            for (int i = 0; i < string.length(); i++) {
-                if (i % 2 == 0)
-                    System.out.print(string.charAt(i));
+            for (int i = 0; i < sArr.length; i++) {
+                if (i % 2 == 0) {
+                    System.out.print(sArr[i]);
+                }
             }
+
+            // Gap
             System.out.print(" ");
 
             // Odd Index
-            for (int j = 0; j < string.length(); j++) {
-                if (j % 2 != 0)
-                    System.out.print(string.charAt(j));
+            for (int i = 0; i < sArr.length; i++) {
+                if (i % 2 != 0) {
+                    System.out.print(sArr[i]);
+                }
             }
             System.out.println();
+            T--;
         }
     }
 }

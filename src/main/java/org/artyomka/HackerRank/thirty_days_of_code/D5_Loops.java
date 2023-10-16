@@ -2,6 +2,7 @@ package org.artyomka.HackerRank.thirty_days_of_code;
 
 import java.util.Scanner;
 
+@SuppressWarnings("DuplicatedCode")
 public class D5_Loops {
     public static void main(String[] args) {
         // Input
