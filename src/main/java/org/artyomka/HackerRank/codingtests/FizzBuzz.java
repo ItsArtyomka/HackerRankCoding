@@ -6,14 +6,20 @@ import java.io.InputStreamReader;
 
 public class FizzBuzz {
     public static void main(String[] args) throws IOException {
+        // Input
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(bufferedReader.readLine().trim());
+
+        // Output
         FB_Result.fizzBuzz(n);
+
+        // Closing the BufferedReader
         bufferedReader.close();
     }
 }
 
 class FB_Result {
+    // FizzBuzz Algorithm
     public static void fizzBuzz(int n) {
         for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
